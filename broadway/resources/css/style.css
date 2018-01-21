@@ -9,6 +9,10 @@ h1 {
   color: white;
 }
 
+.header {
+  background-image: url("../images/background_image.png");
+}
+
 h2 {
   font-size: 32px;
   font-weight: bold;
@@ -32,14 +36,21 @@ p {
   font-size: 23px;
   font-weight: bold;
   color: white;
+  background-image: url("../images/background_image.png");
 }
 
 footer {
   text-align: left !important;
   background-color: dimgray;
+  width: 100%;
 }
 
-footer p. {
+footer p {
   font-size: 11px;
   color: white;
+  display: inline;
+}
+
+footer nav {
+  display: inline;
 }
