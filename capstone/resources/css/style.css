@@ -1,0 +1,652 @@
+html {
+  font-size: 16px;
+  font-family: "Cormorant Garamond", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  background-color: #C1D0F2;
+}
+/*Header section*/
+header {
+  height: 4rem;
+  margin: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logos {
+  display: none;
+}
+
+header span {
+  padding: 1.18rem 0;
+  border-left: 1rem solid white;
+  font-size: 1.4rem;
+}
+.colmar, .academy {
+  border: none;
+}
+.colmar {
+  font-weight:600;
+}
+.academy {
+  color: grey;
+}
+.signin {
+  margin-right: 1rem;
+}
+
+.oncampus {
+  border: none;
+}
+
+header a:hover {
+  color: #091A41;
+  font-weight: 700;
+}
+
+@media only screen and (max-width:1020px) {
+  header span {
+    font-size: 1.2rem;
+    padding: 1.25rem 0;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  header nav {
+    display: none;
+  }
+  .logos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .logos img:hover {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width:500px), and (orientation:landscape) {
+  .logo {
+    display: none
+  }
+  header nav {
+    display: none;
+  }
+  .logos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+/*Main banner section*/
+.banner {
+  background-color: #091A41;
+  display: flex;
+  flex-direction: column wrap;
+}
+.bannercolumn1 {
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+.banner img {
+  width: 100%;
+}
+.bannercolumn2 {
+ align-self: center;
+}
+.banner h1 {
+  font-size: 2.6rem;
+  color: white;
+  padding-right: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 3rem;
+}
+
+.banner h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 3rem;
+}
+
+.bannerbutton {
+  background-color: white;
+  color: #091A41;
+  padding: 1rem 0;
+  text-align: center;
+  width: 65%;
+  margin-left: 2.5rem;
+  font-weight: 600;
+  transition: background 1s ease-in;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  margin-left: 5rem;
+}
+
+.bannerbutton:hover {
+  color: black;
+  background-color: #C1D0F2;
+  font-weight: 700;
+}
+
+@media only screen and (max-width:1020px) {
+  .bannercolumn1 {
+    margin: 2rem 1.5rem;
+    width: 70%;
+  }
+  .bannercolumn2 {
+    padding-left: 2rem;
+  }
+  .banner h1 {
+    margin-left: 0;
+  }
+  .banner h2 {
+    margin-left: 0;
+  }
+  .bannerbutton {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .banner h1 {
+    font-size: 2.3rem;
+  }
+  .banner h2 {
+    font-size: 1.3rem;
+  }
+  .bannerbutton {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .banner h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .banner h2 {
+    font-size: 1rem;
+  }
+  .bannerbutton {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .bannercolumn2 {
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (max-width:500px), and (orientation:landscape) {
+  .banner {
+    display: block;
+    padding-bottom: 1rem;
+  }
+  .bannercolumn1 {
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+  .bannercolumn2 {
+   margin: 0 0 2rem 1rem;
+   width: 90%;
+  }
+  .banner h2 {
+    padding: 2rem 1.5rem 1.5rem 0;
+  }
+  .bannercontent {
+    padding-left: 1rem;
+  }
+}
+/*Main Section*/
+.main {
+  display: flex;
+  flex-direction: column wrap;
+}
+
+.maincolumn1 {
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.maincolumn1 img {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.maincolumn1 h2 {
+  font-size: 2.6rem;
+  padding-bottom: 1.5rem;
+}
+
+.maincolumn1 h6 {
+  font-size: 1.4rem;
+  padding-bottom: 1.5rem;
+  letter-spacing: .01rem;
+  font-style: italic;
+}
+
+.maincolumn1 p {
+  font-size: 1.2rem;
+}
+
+.maincolumn2 {
+  width: 40%;
+  padding-bottom: 2rem;
+  border-left: 0.1rem solid white;
+}
+
+.maincolumn2sub {
+  display: flex;
+  flex-direction: column wrap;
+  border-bottom: 0.3rem solid white;
+}
+
+.maincolumn2sub:hover {
+  background-color: white;
+}
+
+.maincolumn2sub img {
+  width: 75%;
+  height: auto;
+  margin: 1rem 1rem;
+}
+
+.maincolumn2content {
+  width: 65%;
+  align-self: center;
+}
+
+.maincolumn2 h2 {
+  font-size: 2rem;
+}
+
+.maincolumn2 a {
+  color: #253B6E;
+  font-size: 1.15rem;
+}
+.maincolumn2 a:hover {
+font-weight: 600;
+}
+.maincolumn2 p {
+  font-size: 1.3rem;
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width:1020px) {
+  .maincolumn1 h2 {
+    font-size: 2.4rem;
+  }
+  .maincolumn1 h6 {
+    font-size: 1.2rem;
+  }
+  .maincolumn1 p {
+    font-size: 1rem;
+  }
+  .maincolumn2 h2 {
+    font-size: 1.45rem;
+  }
+  .maincolumn2 a {
+    font-size: 0.95rem;
+  }
+  .maincolumn2 p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .maincolumn1 h2 {
+    font-size: 2.1rem;
+  }
+  .maincolumn1 h6 {
+    font-size: 1.3rem;
+  }
+  .maincolumn1 p {
+    font-size: 0.9rem;
+  }
+  .maincolumn2 h2 {
+    font-size: 1.3rem;
+  }
+  .maincolumn2 a {
+    font-size: 0.95rem;
+  }
+  .maincolumn2 p {
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .maincolumn1 {
+    display: none;
+  }
+  .maincolumn2 {
+    width: 100%;
+    border: none;
+    padding-bottom: 0;
+  }
+  .maincolumn2 h2 {
+    font-size: 2rem;
+  }
+  .maincolumn2 a {
+    font-size: 1.2rem;
+  }
+  .maincolumn2 p {
+    font-size: 1.5rem;
+  }
+  .maincolumn2sub {
+    border: none;
+  }
+}
+@media only screen and (max-width:500px), and (orientation:landscape) {
+  .maincolumn1 {
+    display: none;
+  }
+  .maincolumn2 {
+    width: 100%;
+    border: none;
+    padding-bottom: 0;
+  }
+  .maincolumn2sub {
+    display: block;
+    border: none;
+    padding-bottom: 4rem;
+  }
+  .maincolumn2sub img{
+    margin: 1rem;
+    width: 90%;
+  }
+  .maincolumn2content {
+    width: 90%;
+    padding-left: 2rem;
+  }
+  .imagedesktop {
+    display: none;
+  }
+  .maincolumn2content p {
+    padding-right: 1rem;
+  }
+}
+@media only screen and (min-width:501px) {
+  .imagemobile {
+    display:none;
+  }
+}
+
+/*Learning Section*/
+.learning {
+  background-color: #091A41;
+}
+
+.learningtitle {
+  font-size: 2.4rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.learningcolumns {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.software, .art, .design, .data, .business, .marketing {
+  width: 25rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.learningcolumns img{
+  width: 100%;
+  height: auto;
+}
+.learningcontent {
+  margin-top: -0.5rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+  background-color: #C1D0F2;
+  align-items: stretch;
+  height: 5.5rem;
+}
+
+.learningcontent h3 {
+  font-size: 1.95rem;
+  font-weight: 500;
+}
+.learningcontent h5 {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.learningcontent p {
+  font-size: 1.1rem;
+}
+.learningcontent:hover {
+  background-color: white;
+}
+@media only screen and (max-width:1020px) {
+  .learningcontent h3 {
+    font-size: 1.75rem;
+  }
+  .learningtitle {
+    font-size: 2rem;
+  }
+  .learningcontent h5 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width:500px), and (orientation:landscape) {
+ .learning {
+   background-color: #091A41;
+   border-top: 0.1rem solid white;
+   border-bottom: 0.1rem solid white;
+   padding-bottom: 1.5rem;
+ }
+ .learningcolumns {
+   display: block;
+ }
+ .learningcolumns img, .learningcolumns h5, .learningcolumns p {
+   display: none;
+ }
+ .learningtitle {
+   padding-bottom: 1rem;
+ }
+ .learningcontent {
+   background-color: #C1D0F2;
+   padding-bottom: 0.5rem;
+   width: 80%;
+   margin-left: 1.75rem;
+ }
+ .learningcontent:hover {
+   background-color: white;
+   color: black;
+   font-weight: 700;
+ }
+ .learningcontent h3 {
+   padding: 1rem 1rem 1.5rem 1rem;
+ }
+}
+/*Thesis Section*/
+.thesis {
+  padding: 2rem 1.5rem;
+}
+.thesistitle {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.thesiscolumns {
+  display: flex;
+  flex-direction: column wrap;
+}
+.thesiscolumn1 {
+  margin-right: 1.5rem;
+  width: 60%;
+}
+
+.thesiscolumn1 video {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.thesiscolumn1 h4 {
+  font-size: 2.6rem;
+  padding-bottom: 1.5rem;
+}
+
+.thesiscolumn1 h6 {
+  font-size: 1.4rem;
+  padding-bottom: 1.5rem;
+  letter-spacing: .01rem;
+  font-style: italic;
+}
+
+.thesiscolumn2sub {
+  display: flex;
+  flex-direction: column wrap;
+}
+
+.thesiscolumn2sub img {
+  width: 75%;
+  height: auto;
+  margin: 1rem 1rem;
+}
+
+.thesiscolumn2content {
+  width: 65%;
+  align-self: center;
+}
+
+.thesiscolumn2 h2 {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.thesiscolumn2 p {
+  font-size: 1.3rem;
+  margin: 1rem auto;
+}
+
+.thesiscolumn2sub:hover {
+  background-color: white;
+}
+
+@media only screen and (max-width:1020px) {
+  .thesistitle {
+    font-size: 2rem;
+  }
+  .thesiscolumn1 h4 {
+    font-size: 2.4rem;
+  }
+  .thesiscolumn1 h6 {
+    font-size: 1.2rem;
+  }
+  .thesiscolumn2 h2 {
+    font-size: 1.65rem;
+  }
+  .thesiscolumn2 p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .thesiscolumn1 h4 {
+    font-size: 2.1rem;
+  }
+  .thesiscolumn1 h6 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width:680px) {
+   .thesiscolumn2 {
+     display: none;
+   }
+   .thesiscolumn1 {
+    width: 100%;
+    margin: 0;
+   }
+}
+
+@media only screen and (max-width:500px), and (orientation:landscape) {
+  .thesis {
+    padding: 2rem 0 1.5rem 0;
+   }
+   .thesistitle {
+     margin-bottom: 1rem;
+   }
+   .thesiscolumn2, .thesiscolumn1content {
+     display: none;
+   }
+   .thesiscolumn1 {
+    width: 100%;
+    margin: 0;
+   }
+}
+
+/*Footer Section*/
+footer {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  width: 100%;
+  font-size: 1.4rem;
+}
+footer span {
+  margin-right: 1rem;
+}
+footer a:hover {
+  color: #091A41;
+  font-weight: 700;
+}
+footer a:link {
+  color:blue;
+}
+.terms {
+  margin-right: 1.5rem;
+}
+.borderoffooter {
+  border-top: 0.1rem solid white;
+}
+.content {
+  margin-left: 1.5rem;
+}
+@media only screen and (max-width:1020px) {
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width:520px), and (orientation:landscape) {
+  footer span {
+    display: none;
+  }
+  .content {
+    padding: 1rem 0;
+  }
+}
